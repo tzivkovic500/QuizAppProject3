@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">QuizAppProject3</string>
+    <string name="title_name">Do you know who the dolphins are??</string>
+    <string name="q1">Question 1:</string>
+    <string name="q2">Question 2:</string>
+    <string name="q3">Question 3:</string>
+    <string name="q4">Question 4:</string>
+    <string name="q5">Question 5:</string>
+    <string name="q6">Question 6:</string>
+    <string name="question_one">How many teeth do dolphins have?</string>
+    <string name="question_one_answer_one">300</string>
+    <string name="question_one_answer_two">250</string>
+    <string name="question_one_answer_three">100</string>
+    <string name="question_one_answer_four">50</string>
+    <string name="question_two">The average lifespan of dolphins is:</string>
+    <string name="question_two_answer_one">20</string>
+    <string name="question_two_answer_two">60</string>
+    <string name="question_two_answer_three">40</string>
+    <string name="question_two_answer_four">120</string>
+    <string name="question_three">For dolphins, breathing is a voluntary act, not a reflex  like it is for humans.</string>
+    <string name="answer_true">True</string>
+    <string name="answer_false">False</string>
+    <string name="question_four">Each dolphin has a different whistle from the rest.</string>
+    <string name="question_five">Dolphins most like to eat:(pick 2 answers)</string>
+    <string name="question_five_answer_one">fish</string>
+    <string name="question_five_answer_two">crabs</string>
+    <string name="question_five_answer_three">seaweed</string>
+    <string name="question_five_answer_four">squid</string>
+    <string name="question_six">If you agree that dolphins are beautiful beings and they don’t belong in amusement aqua parks write on line below text you see:</string>
+    <string name="question_six_hint">I Love Dolphins</string>
+    <string name="score_button">Get your score</string>
+    <string name="reset_button">Try again</string>
+    <string name="toast0">None right.Learn more about dolphins!</string>
+    <string name="toast1">You only got %1$d correct. Try again!</string>
+    <string name="toast2">Not too bad, you got %1$d correct answers. </string>
+    <string name="toast3">Great job! You got %1$d correct answers.You are a dolphin fan!</string>
+
+
+</resources>
