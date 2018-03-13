@@ -191,10 +191,12 @@
                 android:text="@string/question_five_answer_one" />
 
             <CheckBox
+                android:id="@+id/questionFiveWrongAnswer_checkbox"
                 style="@style/LayoutStyle2"
                 android:text="@string/question_five_answer_two" />
 
             <CheckBox
+                android:id="@+id/questionFiveWrongAnswer1_checkbox"
                 style="@style/LayoutStyle2"
                 android:text="@string/question_five_answer_three" />
 

@@ -3,6 +3,7 @@ package com.example.android.quizappproject3;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     static int totalPoints;
     RadioButton questionOneAnswerTwo;
     RadioButton questionTwoAnswerThree;
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     EditText questionSixEditText;
     CheckBox questionFiveAnswerOne;
     CheckBox questionFiveAnswerFour;
+    CheckBox questionFiveAnswerTwo;
+    CheckBox questionFiveAnswerThree;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,34 +41,42 @@ public class MainActivity extends AppCompatActivity {
         questionFourAnswerTrue = findViewById(R.id.questionFourAnswerTrue_radio);
         questionFiveAnswerOne = findViewById(R.id.questionFiveAnswerOne_checkbox);
         questionFiveAnswerFour = findViewById(R.id.questionFiveAnswerFour_checkbox);
+        questionFiveAnswerTwo = findViewById(R.id.questionFiveWrongAnswer_checkbox);
+        questionFiveAnswerThree = findViewById(R.id.questionFiveWrongAnswer1_checkbox);
         questionSixEditText = findViewById(R.id.questionSix_editText);
+
     }
 
-     /**
+    /**
       *This method is called when score button is clicked. Calculates correct answers.
       */
 
     public void submitAnswers(View v) {
+
         if(questionOneAnswerTwo.isChecked()) {
-            totalPoints += 1;
+            totalPoints ++;
         }
         if(questionTwoAnswerThree.isChecked()) {
-            totalPoints += 1;
+            totalPoints ++;
         }
         if(questionThreeAnswerTrue.isChecked()) {
-            totalPoints += 1;
+            totalPoints ++;
         }
         if(questionFourAnswerTrue.isChecked()) {
-            totalPoints += 1;
+            totalPoints ++;
         }
         if((questionFiveAnswerOne.isChecked()) && (questionFiveAnswerFour.isChecked())) {
-            totalPoints += 1;
+            totalPoints ++;
+        }
+        if ((questionFiveAnswerTwo.isChecked()) && (questionFiveAnswerThree.isChecked())) {
+            totalPoints = 0;
         }
 
         String questionSixString = questionSixEditText.getText().toString();
         if(questionSixString.equals("I Love Dolphins")) {
-            totalPoints += 1;
+            totalPoints ++;
         }
+
 
         // Show score message as a toast
         String messageZero = getResources().getString(R.string.toast0);
@@ -82,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, messageHigh, Toast.LENGTH_LONG).show();
         }
     }
+
 
     /**
      * This method is called when the Reset(Try again) button is clicked
