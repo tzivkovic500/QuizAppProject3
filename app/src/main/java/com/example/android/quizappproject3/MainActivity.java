@@ -65,11 +65,8 @@ public class MainActivity extends AppCompatActivity {
         if(questionFourAnswerTrue.isChecked()) {
             totalPoints ++;
         }
-        if((questionFiveAnswerOne.isChecked()) && (questionFiveAnswerFour.isChecked())) {
+        if((questionFiveAnswerOne.isChecked()) && (questionFiveAnswerFour.isChecked()) && (!questionFiveAnswerTwo.isChecked()) && (!questionFiveAnswerThree.isChecked())) {
             totalPoints ++;
-        }
-        if ((questionFiveAnswerTwo.isChecked()) && (questionFiveAnswerThree.isChecked())) {
-            totalPoints = 0;
         }
 
         String questionSixString = questionSixEditText.getText().toString();
